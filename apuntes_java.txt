@@ -1,0 +1,136 @@
+JAVA UTN
+- es uno de los 3 primeros cursos de java
+- ide a usar: intellij
+https://www.jetbrains.com/idea/download/#section=windows
+
+		-CLASE 1
+ALGORITMO: numero finito de pasos para resolver un problema
+ JAVA es un lenguaje fuertemente tipado, hay que declarar el tipo de las variables
+
+VARIABLES: sintaxis: 
+tipo nombre = valor;
+
+DATOS PRIMITIVOS: 
+	.byte: almacena numeros entre -128 y 127
+	.short: almacena numeros entre -32768 y 32767
+	.int: valores enteros
+	.long: 
+	.float: numeros con coma
+	.double
+	.boolean: valores true o false
+	.char: un caracter
+
+OPERADORES:
+- de asignacion: =
+- aritmeticos:
+	.+
+	.-
+	.*
+	./
+	.%
+-unarios:
+	.+ : nro positivo
+	.- : niega una expresion
+	.++ : incremeta en 1
+	.-- : decrementa en 1
+	.! : invierte el valor de un booleano
+-relacionales:
+	== : igual a
+	!= : no aigual a
+	> : mayor que
+	>= : mayor o igual que
+	< : menor que
+	<= : menor o igual que
+-condicionales:
+	&& : AND. Devuelve true solo si ambas condiciones se cumplen
+	|| : OR. Devuelve true siempre que al menos 1 condicion sea verdadera
+	?: : operador ternario. Se utiliza para decidir que valor asignar.
+ EJ: (condicion)?valorTrue:valorFalse.
+	instanceof: operador especial para los objetos. Sirve para comprobar si un 
+objeto es de una clase concreta. EJ: objeto instanceof clase
+
+ESTRUCTURAS DE CONTROL
+
+	.IF: 
+          if(condicion){
+              codigo
+	     }else{
+		codigo
+	     }
+
+	.SWITCH: 
+switch (expresion) {
+  case valor1:
+    bloque1;
+    break;
+  case valorN:
+    bloqueN;
+    break;
+  …
+  default:
+      bloque_por_defecto;
+}
+
+
+	.WHILE
+while (expresion) {
+  bloque_sentencias;
+}
+
+
+	.DO-WHILE
+do {
+  bloque_sentencias;
+} while (expresion)
+
+
+	.FOR
+for (sentencias_inicio;expresion;incremento) {
+  bloque_sentencias;
+}
+
+
+SALIDA EN CONSOLA- SYSTEM OUT
+System.out.printIn(valor);
+
+
+
+	-CLASE 2
+
+GIT: herramienta de control de versiones, es decir, 
+registra los cambios realizados en un archivo o conjunto, de modo que se puedan
+recuperar versiones especificas.
+ Tambien puede usarse para compartir codigo con otras personas y tener un historial
+de los cambios realizados, saber quien y cuando se hicieron.
+
+REPOSITORIOS: espacio en la nube que esta asignado para alojar todos los archivos de
+nuestro proyecto.
+LOCAL: git trabaja con un repo local en nuestro equipo donde se van a ir agregando 
+los commits
+REMOTO: tambien trabaja con uno remoto al que podemos subir o bajar los commits
+
+¿COMO SE USA?
+1- crear/borrar/modificar archivos en una carpeta asociada a un repo
+2- seleccionar archivos para hacer un commit
+3- confirmar el commit 
+4- subir el commit desde el repo local al repo remoto
+
+PARA SUBIR CAMBIOS: git add <archivos>
+PARA MANDAR LOS CAMBIOS AL REPO LOCAL: git commit -m"descripcion"
+PARA MANDAR LOS CAMBIOS AL REPO REMOTO: git push
+
+GITHUB: es una plataforma que implementa y brinda un sist. de versionado de archivos
+basado en GIT
+
+COMANDOS:
+-git clone + url repositorio remoto: permite clonar un repositorio remoto
+-git status: se tiene que ejecutar en una terminal situada en la raiz de un repo clonado
+permite saber si se relizaron cambios sobre archivos que aun no fueron commiteados
+-git add + nombre del archivo: debe ejecutarse en una terminal situada en la raiz  de un
+repo clonado. Permite agregar archivos al repo local para luego ser commiteados y subidos
+al repo remoto.
+-git commit -m "mesnaje": debe ejecutarse en una terminal situada en la raiza de un repo
+clonado. Permite armar y guardar con los archivos que se encuentran en el staging.
+-git push: Permite subir los commits realizados en el repo local al remoto.
+-git pull: Permite descargar los commits desde el repo remoto y actualizarlos 
+al instante el repo local
